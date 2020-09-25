@@ -1,0 +1,79 @@
+{
+  "title": "MonkeyBOX - Five Bucks a Throw",
+  "description": "Only a nickle!",
+  "privacy_status": "PUBLIC",
+  "privacy_status_comment": "One of: PUBLIC, PRIVATE, or UNLISTED",
+  "songs": [
+    { 
+      "title": "B2k Intro",
+      "artist": "DJ Pfunk",
+      "videoId": "RPsLKExApzc"
+    },
+    { 
+      "title": "Woo-hah!",
+      "artist": "Busta Rhymes and ODB"
+    },
+    { 
+      "title": "Sock it to Me",
+      "artist": "Missy Elliot featuring Da Brat"
+    },
+    { 
+      "title": "Romeo and Juliet",
+      "artist": "Sylk-E Fyne with Chill",
+      "videoId": "h6TP-UOB9BQ"
+    },
+    { 
+      "title": "Excursions",
+      "artist": "A Tribe Called Quest"
+    },
+    { 
+      "title": "Come Baby Come",
+      "artist": "K7"
+    },
+    { 
+      "title": "Gimme Some More",
+      "artist": "Busta Rhymes"
+    },
+    { 
+      "title": "I left My Wallet in El Segundo",
+      "artist": "A Tribe Called Quest v. Norman Cook"
+    },
+    { 
+      "title": "It Takes Two",
+      "artist": "Rob Base and DJ EZ Rock"
+    },
+    { 
+      "title": "The Sounds of Science",
+      "artist": "Beastie Boys"
+    },
+    { 
+      "title": "Flava in Ya Ear",
+      "artist": "Craig Mack"
+    },
+    { 
+      "title": "One Times Got No Case",
+      "artist": "Sir Mix-A-Lot"
+    },
+    { 
+      "title": "Cold Lampin",
+      "artist": "Public Enemy"
+    },
+    { 
+      "title": "Can I Get A",
+      "artist": "Jay-Z featuring Amil and Ja Rule"
+    },
+    { 
+      "title": "Method Man",
+      "artist": "Wu-Tang Clan"
+    },
+    { 
+      "title": "Ghetto Superstar",
+      "artist": "Pras featuring ODB and Mya"
+    },
+    { 
+      "title": "Fuck Martinez",
+      "artist": "2 Live Crew v DJ Pfunk",
+      "videoId": "XG7qbe9fl3A"
+    }
+  ]
+}

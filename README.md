@@ -7,7 +7,7 @@
 * [Scraps](https://music.youtube.com/playlist?list=PL5O3j7EHU9drX2Z3lkCyF13uWuYx5me-q) (Disk 1 and Disk 2)
   * [Disk 1](https://music.youtube.com/playlist?list=PL5O3j7EHU9dpp6U8RWpaBTt9dE80cFWDy) (see [notes](playlist-scraps.notes.md)) [missing track](https://soundcloud.com/pfunkfunk/theme-to-monkeybox)
   * [Disk 2](https://music.youtube.com/playlist?list=PL5O3j7EHU9dpgflMh288Y6PJvYO5Fh8b4)
-* Five Bucks a Throw (missing; Hopefully coming soon.)
+* [Five Bucks a Throw](https://music.youtube.com/playlist?list=PL5O3j7EHU9dqbADekp-Pdfnunf6qxoCrJ) (see [notes](playlist-fivebucks.notes.md))
 * [Genetically Superior (Chicken)](https://music.youtube.com/playlist?list=PL5O3j7EHU9drmzr3rjfcG5cAa-je5Gbbs)
 
 Or:
