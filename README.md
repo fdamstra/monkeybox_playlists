@@ -1,4 +1,4 @@
-# Click on these to Listen! MonkeyBOX Playlists:
+# MonkeyBOX Playlists on YouTube Music:
 
 * [Were there monkeys in the 80s](https://music.youtube.com/playlist?list=PL5O3j7EHU9drsNR_MQXBQYcGjOmykxQKE)
 * [Cornelius the Liar Detective](https://music.youtube.com/playlist?list=PL5O3j7EHU9doVZBlkgxUDX224yDy15J53) [(notes)](playlist-cornelius.notes.md)
@@ -8,7 +8,7 @@
   * [Disk 1](https://music.youtube.com/playlist?list=PL5O3j7EHU9dpp6U8RWpaBTt9dE80cFWDy) [(notes)](playlist-scraps.notes.md)
   * [Disk 2](https://music.youtube.com/playlist?list=PL5O3j7EHU9dpgflMh288Y6PJvYO5Fh8b4)
 * Five Bucks a Throw (missing; Hopefully coming soon.)
-* [Genetically Superior](https://music.youtube.com/playlist?list=PL5O3j7EHU9dob1a4q6oaJotNxg55d1JLA)
+* [Genetically Superior (Chicken)](https://music.youtube.com/playlist?list=PL5O3j7EHU9drmzr3rjfcG5cAa-je5Gbbs)
 
 Or:
 * [MonkeyBOX - The Complete Collection](https://music.youtube.com/playlist?list=PL5O3j7EHU9doP8HViLGrjZQaYG9oksQ75)
@@ -32,6 +32,9 @@ Then generate a playlist per json.
 
 ```
 for i in playlist-*.json; do
+  python3 generate_playlist.py $i
+done
+for i in combined-*.json; do
   python3 generate_playlist.py $i
 done
 ```
