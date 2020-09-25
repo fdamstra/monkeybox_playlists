@@ -5,7 +5,7 @@
 * [And Good Taste Prevailed...](https://music.youtube.com/playlist?list=PL5O3j7EHU9dos_K9hnsbccAFxir0Mto4f)
 
 * [Scraps](https://music.youtube.com/playlist?list=PL5O3j7EHU9drX2Z3lkCyF13uWuYx5me-q) (Disk 1 and Disk 2)
-  * [Disk 1](https://music.youtube.com/playlist?list=PL5O3j7EHU9dpp6U8RWpaBTt9dE80cFWDy) [(notes)](playlist-scraps.notes.md)
+  * [Disk 1](https://music.youtube.com/playlist?list=PL5O3j7EHU9dpp6U8RWpaBTt9dE80cFWDy) [(notes)](playlist-scraps.notes.md) [missing track](https://soundcloud.com/pfunkfunk/theme-to-monkeybox)
   * [Disk 2](https://music.youtube.com/playlist?list=PL5O3j7EHU9dpgflMh288Y6PJvYO5Fh8b4)
 * Five Bucks a Throw (missing; Hopefully coming soon.)
 * [Genetically Superior (Chicken)](https://music.youtube.com/playlist?list=PL5O3j7EHU9drmzr3rjfcG5cAa-je5Gbbs)
@@ -31,12 +31,13 @@ quit()
 Then generate a playlist per json.
 
 ```
+# generate the CDs
 for i in playlist-*.json; do
   python3 generate_playlist.py $i
 done
-for i in combined-*.json; do
-  python3 generate_playlist.py $i
-done
+# Generate the combined playlists in order
+python3 generate_playlist.py combined-scraps.json
+python3 generate_playlist.py combined-monkeybox.json
 ```
 
 It may take a few minutes before your playlist will show up in your browser.

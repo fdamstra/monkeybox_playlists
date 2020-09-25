@@ -5,6 +5,11 @@
   "privacy_status_comment": "One of: PUBLIC, PRIVATE, or UNLISTED",
   "songs": [
     { 
+      "videoId": "4v-dtM_hoFk",
+      "title": "Never Trust a Monkey",
+      "artist": "Brak's School Daze"
+    },
+    { 
       "title": "Beds are Burning",
       "artist": "Midnight Oil"
     },
@@ -17,7 +22,7 @@
       "artist": "Flock of Seagulls"
     },
     { 
-      "title": "Ill Communication",
+      "title": "Get It Together",
       "artist": "Beastie Boys"
     },
     { 
@@ -65,7 +70,7 @@
       "artist": "Eazy-E"
     },
     { 
-      "title": "The Usual Rough Sex",
+      "title": "Rough Sex",
       "artist": "Lords of Acid"
     }
   ]

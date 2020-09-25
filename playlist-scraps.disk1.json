@@ -5,6 +5,11 @@
   "privacy_status_comment": "One of: PUBLIC, PRIVATE, or UNLISTED",
   "songs": [
     { 
+      "title": "Theme to MonkeyBOX",
+      "artist": "DJ P-Funk",
+      "videoId": "lvTXwaAP2oc"
+    },
+    { 
       "title": "Body Movin",
       "artist": "Beastie Boys vs Fatboy Slim"
     },
