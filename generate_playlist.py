@@ -1,6 +1,8 @@
 #! /usr/bin/env python3
 
+import argparse
 import json
+import logging
 
 from ytmusicapi import YTMusic
 
@@ -11,30 +13,51 @@ def get_songs(ytmusic, title=None, artist=None, album=None):
     return [ r for r in results if r['resultType'] == 'song'  ]
 
 def find_playlist(ytmusic, title):
+    logging.debug(f'Searching for playlist "{title}"')
     playlists = ytmusic.get_library_playlists()
     for pl in playlists:
         if pl['title'] == title:
-            print(f'Found existing playlist {pl["title"]}')
+            logging.info(f'Found existing playlist {pl["title"]}')
             return pl['playlistId']
-    print(f'No playlist {pl["title"]} found. Creating.')
+    logging.info(f'No playlist {pl["title"]} found. Creating.')
     return None
 
 def clear_playlist(ytmusic, playlistId):
+    logging.debug(f'Loading playlist "{playlistId}"')
     pl = ytmusic.get_playlist(playlistId=playlistId, limit=0)
-    #tracklist = []
-    #for t in pl['tracks']:
-    #    print(json.dumps(t, indent=2))
     if len(pl['tracks']) > 0:
-        print(f'Clearing playlist of {len(pl["tracks"])} tracks.')
+        logging.info(f'Clearing playlist of {len(pl["tracks"])} tracks.')
         status = ytmusic.remove_playlist_items(playlistId=playlistId, videos=pl['tracks'])
         return True
-    print(f'No tracks to remove.')
+    logging.info(f'No tracks to remove.')
     return True
 
-if __name__ == "__main__":
+#def pick_best(request, results):
+# Thought about using fuzzy string matching. Still might. Look at https://www.datacamp.com/community/tutorials/fuzzy-string-python
+#    # use fuzzy logic to pick the best match
+#    logging.debug('Using fuzzy logic to pick best match.')
+#    if request.get('videoId'):
+#        logging.debug('VideoID specified
+    
 
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument('playlist', help='The playlist file to process.')
+    parser.add_argument('--debug', help='Verbose output.', action='store_true')
+    args = parser.parse_args()
+
+    if(args.debug):
+        logging.basicConfig(level=logging.DEBUG)
+        logging.debug('Level set to debug')
+    else:
+        logging.basicConfig(level=logging.INFO)
+        logging.debug('Level set to info')
+    
+    logging.debug('Initializing ytmusic...')
     ytmusic = YTMusic('headers_auth.json')
-    with open('playlist.json', 'r') as playlist:
+
+    logging.info(f'Opening playlist {args.playlist}')
+    with open(args.playlist, 'r') as playlist:
         playlist = json.load(playlist)
 
     playlistId = find_playlist(ytmusic, title=playlist['title'])
@@ -44,7 +67,7 @@ if __name__ == "__main__":
             description=playlist['description'],
             privacy_status=playlist['privacy_status']
         )
-        print(f'Created playlist with id {playlistId}')
+        logging.info(f'Created playlist with id "{playlistId}"')
     else:
         status = ytmusic.edit_playlist(
             playlistId=playlistId,
@@ -52,24 +75,25 @@ if __name__ == "__main__":
             description=playlist['description'],
             privacyStatus=playlist['privacy_status']
         )
-        print(f'Updated playlist. Status={status}')
+        logging.info(f'Updated playlist. Status={status}')
 
     clear_playlist(ytmusic, playlistId)
 
     for s in playlist['songs']:
-        results = get_songs(ytmusic, title=s['title'], artist=s['artist'])
-        print(f'Searching for "{s["title"]}" by {s["artist"]}"')
+        if s.get('videoId') is not None:
+            logger.info(f'Adding "{s["title"]} by "{s["artist"]}" directly by video ID ("{s["videoId"]}")')
+            results = [ { 'title': s["title"], 'artist': [ { 'name': s["artist"] } ], 'videoId': s["videoId"], 'album': { 'name': "n/a" } } ]
+        else:
+          logging.info(f'Searching for "{s["title"]}" by "{s["artist"]}"')
+          results = list(get_songs(ytmusic, title=s['title'], artist=s['artist']))
+
         for r in results:
-            print(f'  Found candidate: {r["title"]} - {r["artists"][0]["name"]} - {r["album"]["name"]} ({r["videoId"]})')
-        if len(r) > 0:
+            logging.debug(f'  Found candidate: {r["title"]} - {r["artists"][0]["name"]} - {r["album"]["name"]} ({r["videoId"]})')
+        if len(results) > 0:
             status = ytmusic.add_playlist_items(
                 playlistId=playlistId,
                 videoIds=[ results[0]['videoId'] ],
                 duplicates=False
             )
-            print(f'Added first candiates. status={status}')
-
-#playlistId = ytmusic.create_playlist("test", "test description")
-#search_results = ytmusic.search("Oasis Wonderwall")
-#ytmusic.add_playlist_items(playlistId, [search_results[0]['videoId']])
-
+            logging.info(f'Added "{results[0]["title"]} - {results[0]["artists"][0]["name"]} - {results[0]["album"]["name"]} ({results[0]["videoId"]})" to playlist. status={status}')
+            logging.info(f'Done. URL is https://music.youtube.com/playlist?list={playlistId}')

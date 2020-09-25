@@ -1,0 +1,80 @@
+{
+  "title": "MonkeyBOX - Were there Monkeys in Eighties?",
+  "description": "The first and with the least information",
+  "privacy_status": "PUBLIC",
+  "privacy_status_comment": "One of: PUBLIC, PRIVATE, or UNLISTED",
+  "songs": [
+    { 
+      "title": "99 luftballoons",
+      "artist": "Nena"
+    },
+    { 
+      "title": "Come on Eilleen",
+      "artist": "Dexy's Midnight Runners"
+    },
+    { 
+      "title": "Always Something There to Remind Me",
+      "artist": "Naked Eyes"
+    },
+    { 
+      "title": "Der Kommissar",
+      "artist": "After the Fire"
+    },
+    { 
+      "title": "Down Under",
+      "artist": "Men at Work"
+    },
+    { 
+      "title": "Voices Carry",
+      "artist": "Til Tuesday"
+    },
+    { 
+      "title": "Hold Me Now",
+      "artist": "Thompson Twins"
+    },
+    { 
+      "title": "Cars",
+      "artist": "Gary Numan"
+    },
+    { 
+      "title": "Tainted Love",
+      "artist": "Soft Cell"
+    },
+    { 
+      "title": "Mexican Radio",
+      "artist": "Wall of Voodoo"
+    },
+    { 
+      "title": "Jocko Homo",
+      "artist": "Devo"
+    },
+    { 
+      "title": "Hazy Shade of Winter",
+      "artist": "The Bangles"
+    },
+    { 
+      "title": "Hungry Like the Wolf",
+      "artist": "Duran Duran"
+    },
+    { 
+      "title": "Bizarre Love Triangle",
+      "artist": "New Order"
+    },
+    { 
+      "title": "Once in a Lifetime",
+      "artist": "Talking Heads"
+    },
+    { 
+      "title": "What Have I Done to Deserve This?",
+      "artist": "Pet Shop Boys"
+    },
+    { 
+      "title": "Goody Two-Shoes",
+      "artist": "Adam Ant"
+    },
+    { 
+      "title": "Should I Stay or Should I Go?",
+      "artist": "The Clash"
+    }
+  ]
+}

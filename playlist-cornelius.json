@@ -1,0 +1,72 @@
+{
+  "title": "MonkeyBOX - Cornelius the Liar Detective",
+  "description": "9.18.98. A MonkeyBOX CD.",
+  "privacy_status": "PUBLIC",
+  "privacy_status_comment": "One of: PUBLIC, PRIVATE, or UNLISTED",
+  "songs": [
+    { 
+      "title": "Beds are Burning",
+      "artist": "Midnight Oil"
+    },
+    { 
+      "title": "Busy Child",
+      "artist": "Crystal Method"
+    },
+    { 
+      "title": "I ran (Ran so far away)",
+      "artist": "Flock of Seagulls"
+    },
+    { 
+      "title": "Ill Communication",
+      "artist": "Beastie Boys"
+    },
+    { 
+      "title": "What I Got",
+      "artist": "Sublime"
+    },
+    { 
+      "title": "Scenario",
+      "artist": "A Tribue Called Quest"
+    },
+    { 
+      "title": "You Spin Me Round (Like a Record)",
+      "artist": "Dead or Alive"
+    },
+    { 
+      "title": "Disseminated",
+      "artist": "Soul Coughing"
+    },
+    { 
+      "title": "Divine Thing",
+      "artist": "Soup Dragons"
+    },
+    { 
+      "title": "Make 'Em Say Ugh",
+      "artist": "Master P"
+    },
+    { 
+      "title": "Cantaloop",
+      "artist": "Us3"
+    },
+    { 
+      "title": "Jump Around",
+      "artist": "House of Pain"
+    },
+    { 
+      "title": "Rebel Yell",
+      "artist": "Billy Idol"
+    },
+    { 
+      "title": "Supernaut",
+      "artist": "1000 Homo DJs"
+    },
+    { 
+      "title": "Automobile",
+      "artist": "Eazy-E"
+    },
+    { 
+      "title": "The Usual Rough Sex",
+      "artist": "Lords of Acid"
+    }
+  ]
+}
