@@ -1,6 +1,6 @@
 # MonkeyBOX Playlists on YouTube Music:
 
-* [Were there monkeys in the 80s](https://music.youtube.com/playlist?list=PL5O3j7EHU9drsNR_MQXBQYcGjOmykxQKE)
+* [Were There Monkeys in the 80s?](https://music.youtube.com/playlist?list=PL5O3j7EHU9drsNR_MQXBQYcGjOmykxQKE)
 * [Cornelius the Liar Detective](https://music.youtube.com/playlist?list=PL5O3j7EHU9doVZBlkgxUDX224yDy15J53) (see [notes](playlist-cornelius.notes.md))
 * [And Good Taste Prevailed...](https://music.youtube.com/playlist?list=PL5O3j7EHU9dos_K9hnsbccAFxir0Mto4f)
 
