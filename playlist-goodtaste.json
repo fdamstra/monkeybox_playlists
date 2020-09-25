@@ -1,0 +1,80 @@
+{
+  "title": "MonkeyBOX - And Good Taste Prevailed...",
+  "description": "Made exclusively for Joad 'Kill the Hippies' Wobson",
+  "privacy_status": "PUBLIC",
+  "privacy_status_comment": "One of: PUBLIC, PRIVATE, or UNLISTED",
+  "songs": [
+    { 
+      "title": "Dog Shit",
+      "artist": "Wu Tang Clan"
+    },
+    { 
+      "title": "Buena",
+      "artist": "Morphine"
+    },
+    { 
+      "title": "Smack My Bitch Up",
+      "artist": "Chemical Brothers"
+    },
+    { 
+      "title": "Unbelievable",
+      "artist": "EMF"
+    },
+    { 
+      "title": "Jump, Jive, & Wail",
+      "artist": "Louis Prima"
+    },
+    { 
+      "title": "Shake Your Booty",
+      "artist": "K.C. & The Sunshine Band"
+    },
+    { 
+      "title": "Bring the Noise",
+      "artist": "Public Enemy"
+    },
+    { 
+      "title": "Lucas with the Lid Off",
+      "artist": "Lucas"
+    },
+    { 
+      "title": "Block Rockin' Beats",
+      "artist": "Chemical Brothers"
+    },
+    { 
+      "title": "Sex Machine",
+      "artist": "James Brown"
+    },
+    { 
+      "title": "Wicked",
+      "artist": "Ice Cube"
+    },
+    { 
+      "title": "Faith",
+      "artist": "George Michael"
+    },
+    { 
+      "title": "Jump in the Line",
+      "artist": "Harry Belaonte"
+    },
+    { 
+      "title": "Baby's Got Sauce",
+      "artist": "G. Love & Special Sauce"
+    },
+    { 
+      "title": "You and Me and the Bottle Makes Three Tonight (Baby)",
+      "artist": "Big Bad Voodoo Daddy"
+    },
+    { 
+      "title": "Deeper Shade of Soul",
+      "artist": "Urban Dance Squad"
+    },
+    { 
+      "title": "The Globe",
+      "artist": "Big Audio Dynamite II"
+    },
+    { 
+      "title": "Right Here, Right Now",
+      "artist": "Jesus Jones"
+    }
+  ]
+}

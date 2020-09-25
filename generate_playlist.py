@@ -19,7 +19,7 @@ def find_playlist(ytmusic, title):
         if pl['title'] == title:
             logging.info(f'Found existing playlist {pl["title"]}')
             return pl['playlistId']
-    logging.info(f'No playlist {pl["title"]} found. Creating.')
+    logging.info(f'No playlist {title} found. Creating.')
     return None
 
 def clear_playlist(ytmusic, playlistId):
@@ -84,7 +84,7 @@ if __name__ == "__main__":
             logger.info(f'Adding "{s["title"]} by "{s["artist"]}" directly by video ID ("{s["videoId"]}")')
             results = [ { 'title': s["title"], 'artist': [ { 'name': s["artist"] } ], 'videoId': s["videoId"], 'album': { 'name': "n/a" } } ]
         else:
-          logging.info(f'Searching for "{s["title"]}" by "{s["artist"]}"')
+          logging.debug(f'Searching for "{s["title"]}" by "{s["artist"]}"')
           results = list(get_songs(ytmusic, title=s['title'], artist=s['artist']))
 
         for r in results:
@@ -96,4 +96,7 @@ if __name__ == "__main__":
                 duplicates=False
             )
             logging.info(f'Added "{results[0]["title"]} - {results[0]["artists"][0]["name"]} - {results[0]["album"]["name"]} ({results[0]["videoId"]})" to playlist. status={status}')
-            logging.info(f'Done. URL is https://music.youtube.com/playlist?list={playlistId}')
+        else:
+            logging.warning(f'NOT FOUND!!!! No results found for "{s["title"]}" by "{s["artist"]}"')
+
+    logging.info(f'Done. URL is https://music.youtube.com/playlist?list={playlistId}')

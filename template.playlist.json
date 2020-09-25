@@ -1,9 +1,13 @@
 {
-  "title": "",
+  "title": "MonkeyBOX - ",
   "description": "",
   "privacy_status": "PUBLIC",
   "privacy_status_comment": "One of: PUBLIC, PRIVATE, or UNLISTED",
   "songs": [
+    { 
+      "title": "",
+      "artist": ""
+    },
     { 
       "title": "",
       "artist": ""
