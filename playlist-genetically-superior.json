@@ -1,0 +1,68 @@
+{
+  "title": "MonkeyBOX - Genetically Superior",
+  "description": "Note: Title is mocking KFC/Colonel Sanders claim that their chicken was 'Genetically Superior' to other chicken",
+  "privacy_status": "PUBLIC",
+  "privacy_status_comment": "One of: PUBLIC, PRIVATE, or UNLISTED",
+  "songs": [
+    { 
+      "title": "Insomnia",
+      "artist": "Faithless"
+    },
+    { 
+      "title": "Spin Spin Sugar",
+      "artist": "Sneaker Pimps"
+    },
+    { 
+      "title": "It's Like That",
+      "artist": "Run DMC & Jason Nevins"
+    },
+    { 
+      "title": "It's No Good (Hardfloor Edit)",
+      "artist": "Depeche Mode"
+    },
+    { 
+      "title": "Brim Full of Asha (Norman Cook Radio Edit)",
+      "artist": "Cornershop"
+    },
+    { 
+      "title": "Firestarter",
+      "artist": "Prodigy"
+    },
+    { 
+      "title": "Tubthumping",
+      "artist": "Chumbawumba"
+    },
+    { 
+      "title": "Around the World",
+      "artist": "Daft Punk"
+    },
+    { 
+      "title": "People Are Still Having Sex",
+      "artist": "La Tour"
+    },
+    { 
+      "title": "Ready to Go",
+      "artist": "Republica"
+    },
+    { 
+      "title": "Rubber Doll Opus",
+      "artist": "Lords of Acid"
+    },
+    { 
+      "title": "A Knife and a Fork",
+      "artist": "Information Society"
+    },
+    { 
+      "title": "Born Slippy",
+      "artist": "Underworld"
+    },
+    { 
+      "title": "Poison",
+      "artist": "Prodigy"
+    },
+    { 
+      "title": "Cotton-Eyed Joe",
+      "artist": "Rednex"
+    }
+  ]
+}

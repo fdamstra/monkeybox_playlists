@@ -1,0 +1,18 @@
+{
+  "title": "MonkeyBOX - Scraps",
+  "description": "Disk 1 and Disk 2",
+  "privacy_status": "PUBLIC",
+  "privacy_status_comment": "One of: PUBLIC, PRIVATE, or UNLISTED",
+  "songs": [
+    { 
+      "title": "Scraps (disk 1)",
+      "artist": "MonkeyBOX",
+      "playlistId": "PL5O3j7EHU9dpp6U8RWpaBTt9dE80cFWDy"
+    },
+    { 
+      "title": "Scraps (disk 2)",
+      "artist": "MonkeyBOX",
+      "playlistId": "PL5O3j7EHU9dpgflMh288Y6PJvYO5Fh8b4"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "title": "MonkeyBOX - The Complete Collection",
+  "description": "All 6 of the Official MonkeyBOX CDs",
+  "privacy_status": "PUBLIC",
+  "privacy_status_comment": "One of: PUBLIC, PRIVATE, or UNLISTED",
+  "songs": [
+    { 
+      "title": "monkeys",
+      "artist": "MonkeyBOX",
+      "playlistId": "PL5O3j7EHU9drsNR_MQXBQYcGjOmykxQKE"
+    },
+    { 
+      "title": "cornelius",
+      "artist": "MonkeyBOX",
+      "playlistId": "PL5O3j7EHU9doVZBlkgxUDX224yDy15J53"
+    },
+    { 
+      "title": "good taste",
+      "artist": "MonkeyBOX",
+      "playlistId": "PL5O3j7EHU9dos_K9hnsbccAFxir0Mto4f"
+    },
+    { 
+      "title": "scraps",
+      "artist": "MonkeyBOX",
+      "playlistId": "PL5O3j7EHU9drX2Z3lkCyF13uWuYx5me-q"
+    },
+    { 
+      "title": "geneticallysuperior",
+      "artist": "MonkeyBOX",
+      "playlistId": "PL5O3j7EHU9dob1a4q6oaJotNxg55d1JLA"
+    }
+  ]
+}

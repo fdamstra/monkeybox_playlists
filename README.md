@@ -4,11 +4,14 @@
 * [Cornelius the Liar Detective](https://music.youtube.com/playlist?list=PL5O3j7EHU9doVZBlkgxUDX224yDy15J53) [(notes)](playlist-cornelius.notes.md)
 * [And Good Taste Prevailed...](https://music.youtube.com/playlist?list=PL5O3j7EHU9dos_K9hnsbccAFxir0Mto4f)
 
-* Scraps
-  * [Disk 1](https://music.youtube.com/playlist?list=PL5O3j7EHU9drX2Z3lkCyF13uWuYx5me-q) [(notes)](playlist-scraps.notes.md)
+* [Scraps](https://music.youtube.com/playlist?list=PL5O3j7EHU9drX2Z3lkCyF13uWuYx5me-q) (Disk 1 and Disk 2)
+  * [Disk 1](https://music.youtube.com/playlist?list=PL5O3j7EHU9dpp6U8RWpaBTt9dE80cFWDy) [(notes)](playlist-scraps.notes.md)
   * [Disk 2](https://music.youtube.com/playlist?list=PL5O3j7EHU9dpgflMh288Y6PJvYO5Fh8b4)
-* Five Bucks a Throw (missing)
-* [
+* Five Bucks a Throw (missing; Hopefully coming soon.)
+* [Genetically Superior](https://music.youtube.com/playlist?list=PL5O3j7EHU9dob1a4q6oaJotNxg55d1JLA)
+
+Or:
+* [MonkeyBOX - The Complete Collection](https://music.youtube.com/playlist?list=PL5O3j7EHU9doP8HViLGrjZQaYG9oksQ75)
 
 # Regenerating the Playlists
 

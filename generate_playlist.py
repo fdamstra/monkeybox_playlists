@@ -80,6 +80,14 @@ if __name__ == "__main__":
     clear_playlist(ytmusic, playlistId)
 
     for s in playlist['songs']:
+        if s.get('playlistId') is not None:
+            status = ytmusic.add_playlist_items(
+                playlistId=playlistId,
+                videoIds = [ ],
+                source_playlist=s["playlistId"]
+            )
+            logging.info(f'Added playlist "{s["playlistId"]}" ("{s["title"]}"); Status={status}')
+            continue
         if s.get('videoId') is not None:
             logging.info(f'Adding "{s["title"]} by "{s["artist"]}" directly by video ID ("{s["videoId"]}")')
             results = [ { 'title': s["title"], 'artists': [ { 'name': s["artist"] } ], 'videoId': s["videoId"], 'album': { 'name': "n/a" } } ]
