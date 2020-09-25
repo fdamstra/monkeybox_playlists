@@ -1,0 +1,20 @@
+{
+  "title": "Loud Music",
+  "description": "Music that should be turned up to 11",
+  "privacy_status": "PUBLIC",
+  "privacy_status_comment": "One of: PUBLIC, PRIVATE, or UNLISTED",
+  "songs": [
+    { 
+      "title": "Get Down, Make Love",
+      "artist": "Nine Inch Nails"
+    },
+    { 
+      "title": "Closer",
+      "artist": "Nine Inch Nails"
+    },
+    { 
+      "title": "Love the way you lie",
+      "artist": "Eminem"
+    }
+  ]
+}
