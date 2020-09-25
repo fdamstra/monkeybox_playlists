@@ -1,1 +1,1 @@
-* "Theme to MonkeyBOX" by DJ P-Funk not available on youtube music, but you can listen to it [on soundcloud](https://soundcloud.com/pfunkfunk/theme-to-monkeybox)
+* "Theme to MonkeyBOX" by DJ P-Funk not available on youtube music, but you can listen to it [on soundcloud](https://soundcloud.com/pfunkfunk/theme-to-monkeybox). It is available in the `mp3/` directory, so you can upload it and add it yourself.
