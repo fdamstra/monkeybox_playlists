@@ -81,21 +81,27 @@ if __name__ == "__main__":
 
     for s in playlist['songs']:
         if s.get('videoId') is not None:
-            logger.info(f'Adding "{s["title"]} by "{s["artist"]}" directly by video ID ("{s["videoId"]}")')
-            results = [ { 'title': s["title"], 'artist': [ { 'name': s["artist"] } ], 'videoId': s["videoId"], 'album': { 'name': "n/a" } } ]
+            logging.info(f'Adding "{s["title"]} by "{s["artist"]}" directly by video ID ("{s["videoId"]}")')
+            results = [ { 'title': s["title"], 'artists': [ { 'name': s["artist"] } ], 'videoId': s["videoId"], 'album': { 'name': "n/a" } } ]
         else:
           logging.debug(f'Searching for "{s["title"]}" by "{s["artist"]}"')
           results = list(get_songs(ytmusic, title=s['title'], artist=s['artist']))
 
         for r in results:
-            logging.debug(f'  Found candidate: {r["title"]} - {r["artists"][0]["name"]} - {r["album"]["name"]} ({r["videoId"]})')
+            if r["album"] is None:
+                r["album"] = { 'name': '' }
+            try:
+                logging.debug(f'  Found candidate: {r["title"]} - {r["artists"][0]["name"]} - {r.get("album", {}).get("name")} ({r["videoId"]})')
+            except:
+                logging.error(f'  FATAL: Could not output: {json.dumps(r)}')
         if len(results) > 0:
             status = ytmusic.add_playlist_items(
                 playlistId=playlistId,
                 videoIds=[ results[0]['videoId'] ],
                 duplicates=False
             )
-            logging.info(f'Added "{results[0]["title"]} - {results[0]["artists"][0]["name"]} - {results[0]["album"]["name"]} ({results[0]["videoId"]})" to playlist. status={status}')
+            #logging.info(f'Added "{results[0]["title"]} - {results[0]["artists"][0]["name"]} - {results[0]["album"]["name"]} ({results[0]["videoId"]})" to playlist. status={status}')
+            logging.info(f'Match: "{s["title"]}" by "{s["artist"]}" ==> "{results[0]["title"]} - {results[0]["artists"][0]["name"]} - {results[0].get("album", {}).get("name")} ({results[0]["videoId"]})" to playlist. status={status}')
         else:
             logging.warning(f'NOT FOUND!!!! No results found for "{s["title"]}" by "{s["artist"]}"')
 
